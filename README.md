@@ -4,7 +4,7 @@
 
 You can run this demonstration either with or without hardware. The design is built for the [Radiona ULX3S](https://radiona.org/ulx3s/) board, and bitstream upload only works on [WebUSB-enabled browsers](https://caniuse.com/webusb) (and not on the desktop VS Code at the moment). If these requirements are not met, the board programming will fail, but every step before that will still complete.
 
-1. Open this repository in Visual Studio Code. If you have a GitHub account, you can open it [directly via vscode.dev](TheZoq2/spade-vscode-toolchain-demo); otherwise, use any
+1. Open this repository in Visual Studio Code. If you have a GitHub account, you can open it [directly via vscode.dev](https://vscode.dev/github/TheZoq2/spade-vscode-toolchain-demo); otherwise, use any
 2. Install the [YoWASP VS Code extension](https://marketplace.visualstudio.com/items?itemName=yowasp.toolchain) (there will be a prompt to do so in the lower right corner; click "Install").
 3. **(Only when using hardware)** Plug your FPGA evaluation board into a USB port.
 4. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (or open menu "View" → "Command Palette...") and navigate to "YoWASP Toolchain: Build..." by typing the first letters of each word. Press <kbd>Enter</kbd>.
