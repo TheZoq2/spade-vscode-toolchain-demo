@@ -1,7 +1,4 @@
 {
-  "yowaspToolchain.pythonRequirements": [
-    "amaranth"
-  ],
   "yowaspToolchain.buildCommands": [
     ["spade", "top.spade", "-o", "spade.sv"],
     ["yosys", "spade.sv", "-o", "top.json", "-p", "synth_ecp5", "-r", "top"],
