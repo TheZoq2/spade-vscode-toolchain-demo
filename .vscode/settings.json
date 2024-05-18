@@ -3,10 +3,16 @@
     "amaranth"
   ],
   "yowaspToolchain.buildCommands": [
-    ["python", "top.py"],
-    ["yosys", "top.il", "-o", "top.json", "-p", "synth_ecp5"],
+    ["spade", "top.spade", "-o", "spade.sv"],
+    ["yosys", "spade.sv", "-o", "top.json", "-p", "synth_ecp5", "-r", "top"],
     ["nextpnr-ecp5", "--85k", "--package", "CABGA381", "--json", "top.json", "--lpf", "top.lpf", "--textcfg", "top.config"],
     ["ecppack", "--compress", "top.config", "top.bit"],
     ["openFPGALoader", "-b", "ulx3s", "-m", "top.bit"]
+  ],
+  "yowaspToolchain.bundles": [
+    "@yowasp/yosys@release",
+    "@yowasp/nextpnr-ecp5",
+    "@spade-lang/spade",
+    "@yowasp/openfpgaloader",
   ]
 }

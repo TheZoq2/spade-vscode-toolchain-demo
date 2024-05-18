@@ -1,5 +1,6 @@
-!.vscode
+!.vscode/*
 *.il
 *.json
 *.config
 *.bit
+spade.sv
