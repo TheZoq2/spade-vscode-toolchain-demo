@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "yowasp.toolchain"
+        "yowasp.toolchain",
+        "spade-lang.spade-syntax"
     ]
 }

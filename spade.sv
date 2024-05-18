@@ -187,6 +187,9 @@ module top (
     logic[25:0] _e_626;
     (* src = "top.spade:8,14" *)
     reg[25:0] \count ;
+    logic[25:0] _e_641;
+    logic[25:0] _e_642;
+    (* src = "top.spade:10,23" *)
     logic[25:0] _e_640;
     (* src = "top.spade:10,15" *)
     logic _e_638;
@@ -214,7 +217,9 @@ module top (
             \count  <= _e_626;
         end
     end
-    assign _e_640 = 12500000;
+    assign _e_641 = 12500000;
+    assign _e_642 = 1;
+    assign _e_640 = _e_641 >> _e_642;
     assign _e_638 = $signed(\count ) < $signed(_e_640);
     assign \led_mut  = _e_638;
 endmodule
