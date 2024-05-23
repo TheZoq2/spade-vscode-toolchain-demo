@@ -1,6 +1,7 @@
 {
   "yowaspToolchain.buildCommands": [
-    ["spade", "top.spade", "-o", "spade.sv"],
+    ["swim", "build"],
+    ["spade", "--command-file", "build/commands.json", "/dev/null", "-o", "/dev/null"],
     ["yosys", "spade.sv", "-o", "top.json", "-p", "synth_ecp5", "-r", "top"],
     ["nextpnr-ecp5", "--85k", "--package", "CABGA381", "--json", "top.json", "--lpf", "top.lpf", "--textcfg", "top.config"],
     ["ecppack", "--compress", "top.config", "top.bit"],
@@ -10,6 +11,7 @@
     "@yowasp/yosys@release",
     "@yowasp/nextpnr-ecp5",
     "@spade-lang/spade",
+    "@spade-lang/swim",
     "@yowasp/openfpgaloader",
   ]
 }

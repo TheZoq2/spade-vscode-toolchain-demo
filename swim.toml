@@ -1,0 +1,4 @@
+name = "vscode_demo"
+
+[libraries]
+vga = {git = "https://gitlab.com/spade-lang/lib/vga_spade", branch = "main"}
