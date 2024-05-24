@@ -1,4 +1,4 @@
 name = "vscode_demo"
 
 [libraries]
-vga = {git = "https://gitlab.com/spade-lang/lib/vga_spade", branch = "main"}
+hdmi = {git = "https://gitlab.com/TheZoq2/ulx3s_hdmi_spade", branch = "main"}

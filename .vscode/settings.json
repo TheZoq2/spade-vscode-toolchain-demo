@@ -1,5 +1,6 @@
 {
   "yowaspToolchain.buildCommands": [
+    ["swimPrepare"],
     ["swim", "build"],
     ["spade", "--command-file", "build/commands.json", "/dev/null", "-o", "/dev/null"],
     ["yosys", "spade.sv", "-o", "top.json", "-p", "synth_ecp5", "-r", "top"],
@@ -11,7 +12,7 @@
     "@yowasp/yosys@release",
     "@yowasp/nextpnr-ecp5",
     "@spade-lang/spade",
-    "@spade-lang/swim",
+    "@spade-lang/swim@0.8.0-dev233.754.200c83-7d4d30",
     "@yowasp/openfpgaloader",
   ]
 }

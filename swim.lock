@@ -1,0 +1,5 @@
+[libraries.hdmi]
+commit = ""
+
+[libraries.vga]
+commit = ""

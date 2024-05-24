@@ -1,0 +1,10 @@
+[
+  [
+    "vga",
+    "/build/libs/hdmi/build/libs/vga/src"
+  ],
+  [
+    "hdmi",
+    "/build/libs/hdmi/src"
+  ]
+]
